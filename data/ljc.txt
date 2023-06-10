@@ -1,0 +1,26 @@
+向量丛的球丛可定向怎么推出向量丛可定向？
+是否有类"上的选择公理？
+下图链复形短正和列导出的边缘算子是否交换？
+aab标签贴出的曲面是什么，能不能嵌入R^3?
+两个空间的下同调是否有对偶？
+自由群的共轭轨道是什么？
+R^n与R^m作为abel加法群是同构的吗？(m≠n)？
+莫比乌斯带与环面不同胚？
+代数拓扑中的一系列对偶定理怎么学习？
+关于范畴论？
+简单闭折线区域分割问题？
+代数拓扑好的中文教材？
+简单光滑道路的不同参数表达 在其上积分是否一定相同？
+简单闭曲线的不同参数函数下 积分值不变？
+想去数学系？
+选择公理怎么推佐恩引理？
+共轭空间的定义？
+n重积分的变量替换公式？
+广义实值的理论框架？
+周民强n维区间体积等于外测度的问题？
+作者：xinggu
+链接：https://www.zhihu.com/question/397124119/answer/1243897316
+来源：知乎
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+正如匿名用户的答案中所说，本答案并不对任意拓扑空间成立，需要底空间满足一些如 locally path-connected, semilocally simply-connected 之类的限制条件。当然通常的代数拓扑所研究的情况中，这些条件都是成立的。我们将 nnn 维实向量丛等同于 O(n)O(n)O(n) -principal bundles，并给出证明思路。设 E→BE\to BE\to B 为 O(n)O(n)O(n) -principal bundle，则行列式映射  ：det：O(n)→{±1}det：O(n)\to \{\pm 1\}det：O(n)\to \{\pm 1\} 给出一个 2-cover E×O(n){±1}→BE\times_{O(n)}\{\pm 1\}\to BE\times_{O(n)}\{\pm 1\}\to B. 若 (按问题中的定义) 球丛 S(E)→BS(E)\to BS(E)\to B 可定向，则 E×O(n){±1}→BE\times_{O(n)}\{\pm 1\}\to BE\times_{O(n)}\{\pm 1\}\to B 上的 π1(B)\pi_1(B)\pi_1(B) 作用是平凡的，于是 E×O(n){±1}E\times_{O(n)}\{\pm 1\}E\times_{O(n)}\{\pm 1\} 是 2个 BBB 的disjoint union, 每个componant 给出 E→BE \to BE \to B 的一个定向。以上每一步都可逆，所以问题中给出的两种可定向性是等价的。由以上讨论可以得出，要讨论可定向性，主要是看structural group，而与 fiber 的选取关系不大：只要有满同态 G→{±1}G\to \{\pm 1\}G\to \{\pm 1\} ,就可以讨论 GGG 主丛的可定向性。这里顺便不加证明地谈一下可定向性与示性类的关系。记 π\pi\pi 为 BBB 的基本群，则 π\pi\pi 在 E×O(n){±1}→BE\times_{O(n)}\{\pm 1\}\to BE\times_{O(n)}\{\pm 1\}\to B 的纤维 {±1}\{\pm 1\}\{\pm 1\} 上的作用给出一个同态 π→Z/2\pi\to\mathbb{Z}/2\pi\to\mathbb{Z}/2 , 以及相应的映射 K(π,1)→K(Z/2,1)K(\pi,1)\to K(\mathbb{Z}/2,1)K(\pi,1)\to K(\mathbb{Z}/2,1) 。于是复合映射 B→K(π,1)→K(Z/2,1)B\to K(\pi,1)\to K(\mathbb{Z}/2,1)B\to K(\pi,1)\to K(\mathbb{Z}/2,1) 即表示丛 E→BE\to BE\to B 的 first Stiefel-Whitney class. 这个复合映射的平凡性等价于向量丛的 Z/2\mathbb{Z}/2\mathbb{Z}/2 - local system 的平凡性。另一方面， Lie 群的短正合序列 SO(n)→O(n)→det{±1}SO(n)\to O(n) \xrightarrow{det}\{\pm 1\}SO(n)\to O(n) \xrightarrow{det}\{\pm 1\} 导出一个 homotopy fiber sequence BSO(n)→BO(n)→w1K(Z/2,1)BSO(n)\to BO(n) \xrightarrow{w_1}K(\mathbb{Z}/2,1)BSO(n)\to BO(n) \xrightarrow{w_1}K(\mathbb{Z}/2,1) , 其中  w1w_1w_1 为 the universal 1st Stiefel-Whitney class. 于是由上文可以得出，一个 O(n)O(n)O(n) -丛 ξ\xi\xi 的可定向性及其对应的 Z/2\mathbb{Z}/2\mathbb{Z}/2 - local system的平凡性皆等价于 w1(ξ)=0w_1(\xi)=0w_1(\xi)=0 .
